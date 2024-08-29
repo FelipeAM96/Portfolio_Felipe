@@ -1,0 +1,674 @@
+/*--------Generales--------*/
+body {
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+
+/*--------MENU--------*/
+nav {
+  background-color: #333333;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav li {
+  flex: 1;
+  text-align: center;
+}
+
+nav a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-family: 'Fredoka', sans-serif;
+  transition: background-color 0.2s ease-in-out;
+}
+
+nav a:hover {
+  background-color: #555555;
+}
+
+
+
+/*--------ACCUEIL--------*/
+.accueil {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("img/DJI_20230706122617_0013_D.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    max-height: 800px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    margin: 0 60px;
+    padding-top: 4%;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.nom {
+    font-size: 520%;
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(134, 134, 134, 0.515);
+    color: rgb(221, 221, 221);
+
+}
+
+@media screen and (max-width: 767px) {
+  .nom {
+    font-size: 320%;
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(134, 134, 134, 0.515);
+    color: rgb(221, 221, 221);
+
+}
+.nom_moi {
+  font-size: 220%;
+  font-family: 'Fredoka', sans-serif;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(134, 134, 134, 0.515);
+  color: rgb(221, 221, 221);
+
+}
+
+}
+
+.nom_moi {
+  font-size: 300%;
+  font-family: 'Fredoka', sans-serif;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(134, 134, 134, 0.515);
+  color: rgb(221, 221, 221);
+
+}
+.description {
+    font-size: 170%;
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+    padding-top: 18%;
+    color: whitesmoke;
+    text-shadow: 0 1px 2px rgba(134, 134, 134, 0.515);
+
+}
+
+
+
+@media screen and (max-width: 767px) {
+  h1 {
+    margin: 0 60px;
+    padding-top: 8%;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+  .description {
+    font-size: 170%;
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+    padding-top: 60%;
+    color: whitesmoke;
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+}
+
+/*--------Régle Mobile (ACCUEIL)--------*/
+
+@media screen and (max-width: 767px) {
+  .carta1, .carta2, .carta3, .carta4, .carta5, .carta6, .carta7, .carta8 {
+  width: 45%;
+  height: 35%;
+  }
+}
+
+/*--------Page Moi--------*/
+
+.page_moi {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/*--------PRESENTATION--------*/
+.presentation {
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+    padding-top: 1%;
+    font-size: 200%;
+    background: rgb(181, 180, 180);
+    padding-bottom: 2%;
+}
+
+.presentation h2 {
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.formation {
+  margin: 0 10%;
+  padding: 1%;
+  border: 1px solid black;
+  background-color: #f2f2f2;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.etudes {
+  font-size: 60%;
+  font-family: 'Fredoka', sans-serif;
+  text-align: center;
+  border: 1px solid black;
+  padding: 1%;
+  background-color: #f2f2f2;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 5px;
+}
+
+.origene {
+  font-size: 60%;
+  font-family: 'Fredoka', sans-serif;
+  text-align: center;
+  border: 1px solid black;
+  padding: 1%;
+  background-color: #f2f2f2;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 5px;
+}
+
+/*--------Moi--------*/
+
+.topo img {
+  width: 330px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.moi img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+
+
+/*--------Regle Mobile "Page Moi"--------*/
+
+@media screen and (max-width: 767px) {
+  .wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .presentation, .carte {
+    width: 100%;
+  }
+  .presentation {
+    margin-bottom: 5%;
+  }
+  
+  .carte {
+    font-size: 180%;
+  }
+
+  .presentation{
+    font-size: 180%;
+  }
+
+  #map {
+    height: 50vh;
+    margin: 4%;
+    margin-bottom: 10%;
+    border-radius: 5px;
+    border-color: #e63310;
+    object-fit: cover;
+    border: 1px solid black;
+  }
+}
+
+/*--------Compétences--------*/
+.competences {
+  font-family: 'Fredoka', sans-serif;
+  padding-left: 1%;
+  padding-right: 1%;
+  text-align: center;
+  padding-top: calc(0.5%);
+  padding-bottom: calc(3%);
+  font-size: 260%;
+  background: #f6f6f6;
+  height: 100%;
+}
+
+.competences h2{
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.langues{
+  width: 35%;
+  border: 1px solid #adadad;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  margin-right: calc(4%);
+  margin-bottom: 1%;
+}
+
+.Logiciels{
+  width: 35%;
+  border: 1px solid #adadad;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  margin-left: calc(4%);
+  margin-bottom: 1%;
+}
+
+.affinites{
+  font-family: 'Fredoka', sans-serif;
+  font-size: 50%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 20%;
+  padding-bottom: 1%;
+}
+
+.affinites h3{
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.affinites img {
+  width: 5%;
+  height: 5%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.affinites p {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/*--------Régle Mobile "Compétences"--------*/
+
+@media screen and (max-width: 767px) {
+  .affinites{
+    font-family: 'Fredoka', sans-serif;
+    font-size: 65%;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 20%;
+    padding-bottom: 1%;
+    margin-bottom: 5%;
+  }
+
+  .affinites img {
+    width: 10%;
+    height: 10%;
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+  .competences{
+    font-size: 180%;
+  }
+
+  .langues{
+    width: 85%;
+    border: 1px solid #adadad;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    margin-right: calc(4%);
+    margin-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .Logiciels{
+    width: 85%;
+    border: 1px solid #adadad;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    margin-left: calc(4%);
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+/*--------Projets--------*/
+.projets {
+  font-family: 'Fredoka', sans-serif;
+  text-align: center;
+  padding-top: calc(0.5%);
+  padding-bottom: calc(2%);
+  font-size: 260%;
+  background: gainsboro;
+}
+.projets h2 {
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.mes_projets {
+  font-size: 70%;
+  font-family: 'Fredoka', sans-serif;
+  text-align: center;
+}
+
+.carta1 {
+  width: 23%;
+  height: 19%;
+  border: 1px solid black;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.carta2 {
+  width: 23%;
+  height: 19%;
+  border: 1px solid black;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.carta3 {
+  width: 23%;
+  height: 19%;
+  border: 1px solid black;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.carta4 {
+  width: 23%;
+  height: 19%;
+  border: 1px solid black;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.carta5 {
+  width: 23%;
+  height: 19%;
+  border: 1px solid black;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.carta6 {
+  width: 23%;
+  height: 19%;
+  border: 1px solid black;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.carta7 {
+  width: 23%;
+  height: 19%;
+  border: 1px solid black;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.carta8 {
+  width: 23%;
+  height: 19%;
+  border: 1px solid black;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+/*--------Régle Mobile "Projets"--------*/
+
+@media screen and (max-width: 767px) {
+  .carta1, .carta2, .carta3, .carta4, .carta5, .carta6, .carta7, .carta8 {
+  width: 45%;
+  height: 35%;
+  }
+  .projets{
+    font-size: 180%;
+  }
+}
+
+/*--------Contact--------*/
+/*--La messagerie de mail ne marche encore pas, il faut être configuré pour creér un server SMTP qui soit lier a mon mail (je n'ai pas reussi a fair ça)--*/
+
+body {
+  background-color: rgb(193, 194, 201);
+}
+
+.contact {
+  font-family: 'Fredoka', sans-serif;
+  text-align: center;
+  padding-top: 1%;
+  font-size: 100%;
+  background: #f7f8f8;
+}
+
+
+.contact h2 {
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+form {
+  max-width: 40%;
+  margin: 0 auto;
+  font-family: 'Fredoka', sans-serif;
+  height: 25%;
+}
+
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  display: block;
+  font-family: 'Fredoka', sans-serif;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  display: block;
+}
+
+/*--------Contact Sociaux--------*/
+
+/*--------Gmail--------*/
+
+.gmail {
+  font-family: 'Fredoka', sans-serif;
+  text-align: center;
+  margin: 4% auto;
+  font-size: 100%;
+  background: #f7f8f8;
+  height: 50%;
+  width: 24%;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+
+.gmail img {
+  width: 7%;
+  height: 7%;
+  vertical-align: middle;
+}
+
+/*--------Contact insta,facebook et linkedin--------*/
+
+.sociaux {
+  font-family: 'Fredoka', sans-serif;
+  text-align: center;
+  margin-bottom: 3%;
+  font-size: 15px;
+  background: #f7f8f8;
+  padding-top: 10px;
+  height: 30px;
+  letter-spacing: 2px;
+  word-spacing: 400px;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+.sociaux img {
+  float: left;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+}
+.sociaux ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sociaux li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.sociaux a {
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+/*--------Régle Mobile "Contact Sociaux"--------*/
+
+@media screen and (max-width: 767px) {
+  .sociaux {
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+    margin-bottom: 3%;
+    font-size: 90%;
+    background: #f7f8f8;
+    vertical-align: middle;
+    height: 30%;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    padding-bottom: 3%;
+    line-height: 1.5;
+  }
+  .gmail {
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+    margin-bottom: 1%;
+    font-size: 100%;
+    background: #f7f8f8;
+    height: 70%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*--------Remarque finale--------*/
+.remarque h2{
+  text-align: center;
+  font-size: 95%;
+  font-family: 'Fredoka', sans-serif;
+  padding-bottom: 2%;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+/*--------Buttom Back-to-top--------*/
+
+.back-to-top {
+  position: fixed;
+  bottom: 5%;
+  right: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-top: auto;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100%;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  padding: 1%;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+
+.back-to-top:hover {
+  background-color: #959494;
+}
+
+.back-to-top:active {
+  background-color: #777676;
+}
+
+.top {
+  position: absolute;
+  top: 0;
+}
+
+.back-to-top {
+  text-decoration: none;
+  z-index: 9999; 
+}
+
+@media screen and (max-width: 767px) {
+  .back-to-top{
+    bottom: 4%;
+    right: 4%;
+    width: 25px;
+    height: 25px;
+  }
+
+}

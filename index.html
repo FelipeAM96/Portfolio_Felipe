@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Felipe Aguiar Martin</title> <!-- Nom sur l'onglet de navigation -->
+    <link rel="stylesheet" href="style.css"> <!-- Compatibilité avec les styles du fichier CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Style de police -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Style de police -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet"> <!-- Style de police Fredoka -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css" /> <!-- Source base pour la carte interactive -->
+
+</head>
+<body>
+
+<!---MENU--->
+
+    <section class="menu">
+        <nav>
+            <ul>
+              <li><a href="#presentation">Présentation</a></li>
+              <li><a href="#competences">Compétences</a></li>
+              <li><a href="#projets">Projets</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+    </section>
+
+<!---ACCUEIL--->
+    <section class="accueil">
+        <h1 class="nom">Felipe Aguiar Martin</h1>
+        <p class="description">Pour la télédétection de l'agriculture, forêt et l'environnement</p>
+    </section>
+
+<!---Page Moi--->
+<div class="page_moi">
+
+<!---PRESENTATION--->
+<section id="presentation"></section>
+    <section class="presentation"> <h2>Présentation</h2>
+
+    </p>
+    <p class="origene"><u><b>Origine:</b></u><br>
+        <br>• Né à São Paulo et habitant à Curitiba (Brésil) <br>
+        <br> Indirectement exposé à la géomatique depuis toujours grâce au contexte familial. Appliqué à la télédétection.</p>
+
+        <p class="etudes"><u><b>Formations:</b></u><br>
+            <br> <b>• Licence Biologie</b> - Université Federal du Paraná (Curitiba, BR)
+            <br> <b>• Spécialisation Géotraitement</b> - PUC Minas IEC (Minas Gerais, BR)
+            <br> <b>• Master Géomatique</b> - Université de Toulouse (Toulouse, FR)
+            <br><br>Biologiste géomètre d'origine brésilienne et nationalité française, résidant en France depuis 2022.
+
+            <div class="moi">
+                <img src="img/moi.jpeg">
+                </div>
+    </section>
+
+<!---Carte--->
+
+<section class="carte"> <h2>Carte de Localisation</h2>
+
+    <div id="map"></div>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+      var mymap = L.map('map').setView([10, -25], 2);
+  
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+      }).addTo(mymap);
+  
+      var marker = L.marker([43.5864079, 1.4441954]).addTo(mymap);
+      marker.bindPopup("<b>Toulouse (France)</b><br>Où je :<br>• Etudie géomatique<br> • Habite (depuis 2022)").openPopup();
+  
+      var marker2 = L.marker([47.9053535,1.8914896]).addTo(mymap);
+      marker2.bindPopup("<b>Orléans (France)</b><br>Où j'ai :<br>• Fait mon alternance au CNPF").openPopup();
+
+      var marker2 = L.marker([-23.2999005,-45.9830526]).addTo(mymap);
+      marker2.bindPopup("<b>Jacareí - SP (Brésil)</b><br>Mon lieu de naissance").openPopup();
+
+      var marker2 = L.marker([-25.397257, -49.351975]).addTo(mymap);
+      marker2.bindPopup("<b>Curitiba - PR (Brésil)</b><br>Où j'ai :<br>• Obtenu mon diplôme de Biologie<br> • Habité (jusqu'à 26 ans)").openPopup();
+
+    </script>
+
+</div>
+
+
+<!---Compétences--->
+<section id="competences"></section>
+<section class="competences"> <h2>Compétences</h2>
+    <img src="img/langues.png" alt="langues" class="langues">
+    <img src="img/logiciels.png" alt="Logiciels" class="Logiciels">
+
+    <div class="affinites"> <h3>Affinités</h3>
+        <img src="img/forest.png" alt="forest" class="Forest">
+        <p>Enthousiaste de la télédétection appliquée à l'agriculture, forêt et à l'environnement.</p>
+        <img src="img/satellite.png" alt="satellite" class="Satellite">
+    </div>
+
+
+</section>
+
+
+
+<!---Projets--->
+<section id="projets"></section>
+    <section class="projets"> <h2>Projets</h2>
+        <p class="mes_projets">Quelques projets développés.</p>
+        <a target = "_blank" href="projets/Fragilidade_Ambiental.pdf"><img src="projets/Fragilidade_Ambiental.png" alt="Fragilidade_Ambiental"  class="carta2"></a>
+        <a target = "_blank" href="projets/Iluminacao_Publica.pdf"><img src="projets/Iluminacao_Publica.jpg" alt="Iluminação_Publica"  class="carta3"></a>
+        <a target = "_blank" href="projets/SGBD.pdf"><img src="projets/SGBD.png" alt="SGBD"  class="carta8"></a>
+        <a target = "_blank" href="projets/Correcao_ATM.jpg"><img src="projets/Correcao_ATM.jpg" alt="Imagem do Correcao_ATM"  class="carta1"></a>
+        <a target = "_blank" href="projets/Modeleur.pdf"><img src="projets/Modeleur.jpg" alt="Modeleur"  class="carta4"></a>
+        <a target = "_blank" href="projets/OSM_BDTOPO.pdf"><img src="projets/OSM_BDTOPO.jpeg" alt="OSM_BDTOPO"  class="carta5"></a>
+        <a target = "_blank" href="projets/Pech_David.pdf"><img src="projets/Pech_David.jpeg" alt="Pech_David"  class="carta6"></a>
+        <a target = "_blank" href="projets/Projet_Fabas.pdf"><img src="projets/Projet_Fabas.png" alt="Projet_Fabas"  class="carta7"></a>
+        <a target = "_blank" href="projets/Stage_M1_Felipe/Stage_M1_Felipe.html"><img src="img/Rapport_Multispectral.png" alt="Rapports_Stage"  class="stage"></a>
+        <a target = "_blank" href="projets/Stage_M2_Felipe/Stage_M2_Felipe.html"><img src="img/Alternance_CNPF.png" alt="Supports_Alternance"  class="stage"></a>
+    </section>
+
+
+<!---Contact--->
+<!--La messagerie de mail ne marche encore pas, il faut être configuré pour creér un server SMTP qui soit lier a mon mail (je n'ai pas reussi a le faire)-->
+
+<section id="contact"></section>
+    <dev class="contact"> <h2>Contact</h2> 
+        <p style="color: red;">L'envoi automatique est en cours de maintenance. Veuillez cliquer sur le lien "Mon mail".</p></dev>
+<form method="post" action="enviar-email.php">
+    <label for="email">Votre Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="sujet">Sujet:</label>
+    <input type="text" id="sujet" name="sujet" required>
+    
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+    
+    <input type="submit" value="Envoyer">
+</form>
+
+
+<!---Contact Sociaux--->
+
+<section class="gmail">
+    <p><a href="mailto:felipeagmt96@gmail.com"><img src="img/gmail.png" alt="Email"></a>&nbsp;&nbsp;<b>Mon mail:</b>&nbsp;<a href="mailto:felipeagmt96@gmail.com">felipeagmt96@gmail.com</a></p>
+</section>
+
+
+
+<div class="sociaux">
+    <ul>
+        <a href="https://www.instagram.com/felipeaguiarm/"><img src="img/instagram.png">Instagram</a>
+        <a href="https://www.facebook.com/felipe.aguiar.94/"><img src="img/facebook.png">Facebook</a>
+        <a href="https://www.linkedin.com/in/felipe-aguiar-martin-99001a190/"><img src="img/linkedin.png">LinkedIn</a>        
+    </ul>
+
+</div>
+</section>
+
+<!---Remarque finale--->
+
+<div class="remarque"><h2>Site Portfolio totalement produit par Felipe AGUIAR MARTIN, en tant qu'étudiant en géomatique (France, 2022 - 2024).</h2></div>
+
+<!---Buttom Back-to-top--->
+
+    <a href="#" class="back-to-top">&#8593;</a>
+    <div id="top"></div>
+
+</body>
+</html>
